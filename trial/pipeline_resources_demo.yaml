@@ -13,7 +13,7 @@ spec:
       image: registry.access.redhat.com/ubi8/ubi
       command:
         - /bin/bash
-      args: ['-c', 'echo $(find ./ -type f | wc -l) files in repo']
+      args: ['-c', 'echo $(find ./$HOME -type f | wc -l) files in repo']
 ---
 apiVersion: tekton.dev/v1beta1
 kind: Pipeline
