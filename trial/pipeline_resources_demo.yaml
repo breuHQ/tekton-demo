@@ -13,7 +13,7 @@ spec:
       image: registry.access.redhat.com/ubi8/ubi
       command:
         - /bin/bash
-      args: ['-c', 'echo $(find ./code -type f | wc -l) files in repo']
+      args: ['-c', 'echo $(find ./ -type f | wc -l) files in repo']
 ---
 apiVersion: tekton.dev/v1beta1
 kind: Pipeline
@@ -40,4 +40,4 @@ spec:
   type: git  
   params:
     - name: url
-      value: https://github.com/joellord/handson-tekton.git
+      value: https://github.com/sauronil-das/tekton-demo.git
