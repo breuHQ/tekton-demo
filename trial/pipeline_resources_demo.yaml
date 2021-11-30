@@ -40,4 +40,4 @@ spec:
   type: git  
   params:
     - name: url
-      value: https://github.com/sauronil-das/tekton-demo.git
+      value: https://github.com/breuHQ/tekton-demo.git
